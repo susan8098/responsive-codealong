@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro:wght@600&display=swap"
+    rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="wrapper">
+      <nav>
+        <!-- Logo -->
+        <a href="#" class="logo">
+          Logo
+        </a>
+        <!-- Menu -->
+        <ul>
+          <li><a href="#"><i class="fas fa-money-bill-alt buyNow"></i>Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Hello World</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="wrapper">
+        <div class="image-text-container">
+          <div class="text-col">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, repellat. Ad nam quibusdam odio rerum
+              velit commodi, sunt excepturi sequi numquam, hic dolores corporis maxime molestiae delectus magni neque
+              voluptates?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat laboriosam dolore illum ea corrupti
+              culpa sit, fugit quae maxime! Amet ea temporibus aliquid, vel facere suscipit rem omnis voluptatem!</p>
+          </div>
+          <div class="image-col">
+            <img src="./assets/about.jpg" alt="black and white building">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- People Section -->
+    <section class="people">
+      <div class="wrapper">
+        <h2>People</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="./assets/people1.jpg" alt="Nate in yellow hoodie">
+            <h3>Nate</h3>
+          </div>
+          <div class="gallery-item">
+            <img src="./assets/people2.jpg" alt="Lisa with a camera">
+            <h3>Lisa</h3>
+          </div>
+          <div class="gallery-item">
+            <img src="./assets/people3.jpg" alt="Jenny">
+            <h3>Jenny</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main> 
+  
+  <!-- Footer -->
+  <footer>
+    <p>2020 Copyright</p>
+  </footer>
+
+  <script>
+
+    const warrior = {
+      equipment: 'sheild',
+      energy: 100,
+      location: {
+        x: 10,
+        y: 10
+      },
+      walk: function(x, y) {
+        this.location.x = this.location.x + x;
+        this.location.y = this.location.y + y;
+      },
+      strike: function(harm) {
+        this.energy = this.energy - harm;
+      },
+      switchEquipment: function(equipment) {
+        this.equipment = equipment;
+      }
+    }
+
+  </script>
+  
+</body>
+</html>
